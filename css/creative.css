@@ -52,7 +52,7 @@ p {
 }
 
 .bg-primary {
-    background-color: #f05f40;
+    background-color: #CD253D;
 }
 
 .bg-dark {
@@ -74,6 +74,17 @@ aside {
 
 .no-padding {
     padding: 0;
+}
+
+.image-small {
+    height: auto;
+    width: 125px;
+    margin: auto;
+    min-width: 125px;
+}
+
+p {
+    text-align: center;
 }
 
 .navbar-default {
