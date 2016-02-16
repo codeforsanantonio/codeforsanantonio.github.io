@@ -45,6 +45,16 @@ a:focus {
     text-decoration: none;
 }
 
+#contact a,
+#contact a:active {
+    color: black;
+}
+
+#contact a:hover,
+#contact a:focus {
+    color: #eb3812;
+}
+
 h1,
 h2,
 h3,
@@ -344,6 +354,14 @@ header .header-content .header-content-inner p {
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
         font-size: 22px;
     }
+}
+
+#contact {
+    padding-bottom: 25px;
+}
+
+.social-icons {
+    padding-top: 15px;
 }
 
 .call-to-action h2 {
