@@ -32,6 +32,30 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- Expenses Data -->
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Item', 'Monthly Total Expenses'],
+          ['Programs: $249.74',     249.74],
+          ['Fundraising',      1],
+          ['General Administation',  1]
+        ]);
+
+        var options = {
+          title: 'Breakdown',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+    <!-- End of Expenses Data -->
+
 </head>
 
 <body id="page-top">
@@ -51,34 +75,6 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                    <a href="http://bit.ly/codeforsanantonio-Github" class="btn btn-social-icon btn-github" target="_blank">
-                        <i class="fa fa-github"></i>
-                    </a>
-                    </li>
-                    <li>
-                        <a href="http://bit.ly/codeforsanantonio-Twitter" class="btn btn-social-icon btn-twitter" target="_blank">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    </li>
-                    <li>
-                        <a href="http://bit.ly/codeforsanantonio-FacebookPage" class="btn btn-social-icon btn-facebook" target="_blank">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                    </li>
-                    <li>
-                        <a href="http://bit.ly/codeforsanantonio-FacebookGroup" class="btn btn-social-icon btn-facebook" target="_blank">
-                        <i class="fa fa-facebook-official"></i>
-                    </a>
-                    </li>
-                    <!-- <li>
-                        <a href="http://bit.ly/opendatasatxInstagram" class="btn btn-social-icon btn-instagram" target="_blank">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                    </li> -->
-                </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a class="page-scroll" href="http://bit.ly/CfSA-home">home</a>
@@ -105,20 +101,36 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+    <aside class="bg-dark">
+    </aside>
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="text-left">
+                <h2 class="text-faded">Financials</h2>
+                <h2>Code for San Antonio is an organization dedicated to making government work for the people, by the people, in the 21st century.</br></br>
 
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1>Code for San Antonio</h1>
-                <!-- <hr>
-                <h2 style="color:white;"></strong>The Code for San Antonio Hack Night is a free, weekly event at Geekdom, San Antonio to build, share and learn about tools to create, support, and serve the public good.</strong></h2>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a> -->
+                This monthly income report is created for you, Brigade Members. By documenting the struggles we encounter and the successes we celebrate as engaged citizens every single month, we are able to provide you with support – and a single resource where we share what’s working, what’s not and what’s possible.</br></br>
+
+                There’s a lot of hard work that goes into learning and growing as a civic technologist, especially when you’re just starting out. The most important part of the equation is that you’re able to pass on what you learn to others through teaching and collaborating, which is what we aim to do here at Code for San Antonio.</br> 
+                </h2>
             </div>
         </div>
-    </header>
+    </aside>
 
-<!-- Chris adding events here -->
-   <section id="services">
+    <section id="financials">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>FY 2016 February: Total Expenses*</h2>
+                    <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="primary">
+
+    <section id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -200,68 +212,6 @@
         </div>
     </section>
 
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Past Events</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-calendar-o wow bounceIn text-primary"></i>
-                        <h3>February 8th, 2016</h3>
-                        <h4>Civic Hacking Night</h4>
-                        <p class="text-muted">From 7:00 - 9:00 PM</p>
-                        <div class="btn-group">
-                            </br>
-                            <p>
-                            <button type="button" class="btn btn-xl btn-default"><a href="http://bit.ly/CfSA-08feb" style="color:white" target="_blank">RSVP</a></button>
-                            <p></br>
-                        </div>
-                        <p class="text-muted">Geekdom 7th Floor Conference Room</p>
-                        <p class="text-muted">110 E Houston St, San Antonio, TX 78205</p>
-                        <p class="text-muted">Sponsored by:</p> 
-                        </br>
-                        </br>
-                        <a href="http://bit.ly/CfSA-codeup" target="_blank">            
-                            <img src="img/codeup.png" class="image-small" alt="Sponsored by Codeup">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="service-box ">
-                        <i class="fa fa-4x fa-calendar-o wow bounceIn text-primary"></i>
-                        <h3>February 1st, 2016</h3>
-                        <h4>Civic Hacking Night</h4>
-                        <p class="text-muted">From 7:00 - 9:00 PM</p>
-                        <div class="btn-group">
-                            </br>
-                            <p>
-                            <button type="button" class="btn btn-xl btn-default"><a href="http://bit.ly/CfSA-01feb" style="color:white" target="_blank">RSVP</a></button>
-                            <p></br>
-                        </div>
-                        <p class="text-muted">Geekdom's Event Center - Back Room</p>
-                        <p class="text-muted">131 Soledad St, San Antonio, TX 78205</p>
-                        <p class="text-muted">Sponsored by:</p> 
-                        </br>          
-                        <a href="http://bit.ly/CfSA-grok" target="_blank">           
-                            <img src="img/grok-interactive.jpeg" class="image-small" alt="Sponsored by Grok Interactive">
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-<!-- Kate is taking about section -->
     <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
@@ -276,7 +226,6 @@
         </div>
     </section>
 
-<!-- Luke is taking Get Involved -->
     <section id="services">
         <div class="container">
             <div class="row">
@@ -296,16 +245,13 @@
                     </a>
                     </div>
 
-
-
                     <!-- Paypal Button
                             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                         <input type="hidden" name="cmd" value="_s-xclick">
                         <input type="hidden" name="hosted_button_id" value="HKVEVHR5BWY4J">
                         <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                        </form> -->
-                        
+                        </form> --> 
 
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
@@ -333,7 +279,6 @@
         </div>
     </section>
 
-<!-- Allan is taking project section -->
     <section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter">
@@ -431,6 +376,7 @@
         </div>
     </section>
 
+    <!-- Team Section -->
     <aside class="bg-dark">
         <div class="container text-center">
             <div class="call-to-action">
@@ -439,27 +385,46 @@
             </div>
         </div>
     </aside>
+    <!-- End of Team Section -->
 
-<!-- Burney is taking the contact section -->
+    <!-- Footer -->
     <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Let's Get In Touch!</h2>
                     <hr class="primary">
-                    <!-- <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p> -->
+                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-map-marker fa-3x wow bounceIn"></i>
-                    <p>Geekdom, 7th floor, 110 E Houston St, San Antonio, TX 78205</p>
+                    <p><a href="https://www.google.com/maps/place/131+Soledad+St,+San+Antonio,+TX+78205/@29.4259183,-98.4954275,17z/data=!3m1!4b1!4m2!3m1!1s0x865c5f52c543b271:0x35f7eb1766936005" target="_blank">Geekdom, Event Center, 131 Soledad St, San Antonio, TX 78205</a></p>
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
                     <p><a href="mailto:hello@codeforsanantonio.com">hello@codeforsanantonio.com</a></p>
                 </div>
+                <br>
+                <div class="col-lg-12 text-center social-icons">
+                    <ul class="list-inline">
+                        <li>
+                        <a href="http://bit.ly/codeforsanantonio-Github" class="btn btn-social-icon btn-github" target="_blank">
+                            <i class="fa fa-github fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://bit.ly/codeforsanantonio-Twitter" class="btn btn-social-icon btn-twitter" target="_blank">
+                            <i class="fa fa-twitter fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://bit.ly/codeforsanantonio-FacebookPage" class="btn btn-social-icon btn-facebook" target="_blank">
+                            <i class="fa fa-facebook fa-3x"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
+    <!-- End of Footer -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
