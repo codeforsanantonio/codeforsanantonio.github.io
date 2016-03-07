@@ -1,0 +1,107 @@
+/*Carousel Styling*/
+.carousel {
+    margin: 10px 0;
+}
+
+/*Carousel Header*/
+.carousel h3 {
+    color: white;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+/*Carousel Images*/
+.avatar {
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+}
+
+/* The controls */
+.carousel-control {
+    left: -12px;
+    height: 40px;
+    width: 40px;
+    background: none repeat scroll 0 0 #222222;
+    border: 4px solid #FFFFFF;
+    border-radius: 23px 23px 23px 23px;
+    margin-top: 75px;
+}
+
+/** single-item multi carousel */
+.carousel-inner.onebyone-carousel {
+    margin: auto;
+    width: 90%;
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-inner.onebyone-carousel > .item {
+        -webkit-transition: -webkit-transform .6s ease-in-out;
+        -o-transition: -o-transform .6s ease-in-out;
+        transition: transform .6s ease-in-out;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-perspective: 1000;
+        perspective: 1000;
+    }
+
+    .carousel-inner.onebyone-carousel > .item.next,
+    .carousel-inner.onebyone-carousel > .item.active.right {
+        left: 0;
+        -webkit-transform: translate3d(33.33%, 0, 0);
+        transform: translate3d(33.33%, 0, 0);
+    }
+
+    .carousel-inner.onebyone-carousel > .item.prev,
+    .carousel-inner.onebyone-carousel > .item.active.left {
+        left: 0;
+        -webkit-transform: translate3d(-33.33%, 0, 0);
+        transform: translate3d(-33.33%, 0, 0);
+    }
+
+    .carousel-inner.onebyone-carousel > .item.next.left,
+    .carousel-inner.onebyone-carousel > .item.prev.right,
+    .carousel-inner.onebyone-carousel > .item.active {
+        left: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.carousel-inner.onebyone-carousel > .active,
+.carousel-inner.onebyone-carousel > .next,
+.carousel-inner.onebyone-carousel > .prev {
+    display: block;
+}
+
+.carousel-inner.onebyone-carousel > .active {
+    left: 0;
+}
+
+.carousel-inner.onebyone-carousel > .next,
+.carousel-inner.onebyone-carousel > .prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.carousel-inner.onebyone-carousel > .next {
+    left: 33.33%;
+}
+
+.carousel-inner.onebyone-carousel > .prev {
+    left: -33.33%;
+}
+
+.carousel-inner.onebyone-carousel > .next.left,
+.carousel-inner.onebyone-carousel > .prev.right {
+    left: 0;
+}
+
+.carousel-inner.onebyone-carousel > .active.left {
+    left: -33.33%;
+}
+
+.carousel-inner.onebyone-carousel > .active.right {
+    left: 33.33%;
+}

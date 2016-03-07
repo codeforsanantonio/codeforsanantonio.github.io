@@ -1,0 +1,98 @@
+.milestone {
+    margin-top: 40px;
+    /*border-bottom: solid 1px #e0e0e0;
+    padding: 0 0 10px 0;*/
+}
+
+.milestone > .milestone-step {
+    padding: 0;
+    position: relative;
+}
+
+.milestone > .milestone-step + .milestone-step {}
+
+.milestone > .milestone-step .milestone-stepnum {
+    color: #595959;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.milestone > .milestone-step .milestone-info {
+    color: #999;
+    font-size: 14px;
+}
+
+.milestone > .milestone-step > .milestone-dot {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: #CD253D;
+    top: 45px;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    border-radius: 50%;
+}
+
+.milestone > .milestone-step > .milestone-dot:after {
+    content: ' ';
+    width: 14px;
+    height: 14px;
+    background: #fbbd19;
+    border-radius: 50px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.milestone > .milestone-step > .progress {
+    position: relative;
+    border-radius: 0px;
+    height: 8px;
+    box-shadow: none;
+    margin: 20px 0;
+}
+
+.milestone > .milestone-step > .progress > .progress-bar {
+    width:0px;
+    box-shadow: none;
+    background: #CD253D;
+}
+
+.milestone > .milestone-step.complete > .progress > .progress-bar {
+    width:100%;
+}
+
+.milestone > .milestone-step.active > .progress > .progress-bar {
+    width:50%;
+}
+
+.milestone > .milestone-step:first-child.active > .progress > .progress-bar {
+    width:0%;
+}
+
+.milestone > .milestone-step:last-child.active > .progress > .progress-bar {
+    width: 100%;
+}
+
+.milestone > .milestone-step.disabled > .milestone-dot {
+    background-color: #f5f5f5;
+}
+
+.milestone > .milestone-step.disabled > .milestone-dot:after {
+    opacity: 0;
+}
+
+.milestone > .milestone-step:first-child  > .progress {
+    left: 50%;
+    width: 50%;
+}
+
+.milestone > .milestone-step:last-child  > .progress {
+    width: 50%;
+}
+
+.milestone > .milestone-step.disabled a.milestone-dot {
+    pointer-events: none;
+}

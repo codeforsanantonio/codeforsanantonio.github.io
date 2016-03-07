@@ -1,0 +1,72 @@
+#This is a template file for each group to provide information needed to populate their respective landing pages. Please only type below the hashtagged lines and keep an empty line between each entry, as I will be using a script to parse this information and populate the pages. For reference, please refer to the template page to see where the text will appear.
+
+#When you are finished, please email it to richard.rapstine@gmail.com. Make the subject your group's name. Please keep the file as a .txt file. Thank you!
+
+
+
+#Group Name (Your project's name or whatever you have decided to call yourself!)
+
+
+#Header Text
+
+
+#Kicker Text
+
+
+#About Section
+  #Header Text
+
+
+  #Mission Text
+
+
+  #Description Text
+
+
+#Progress Section
+  #Step One
+    #Title
+
+
+    #Text
+
+
+  #Step Two
+    #Title
+
+
+    #Text
+
+
+  #Step Three
+    #Title
+
+
+    #Text
+
+
+  #Step Four
+    #Title
+
+
+    #Text
+
+
+#Team Section (Please list github usernames of each of your group members, separated by a comma. No capital letters please!)
+
+
+#Contact Section (Your project's contact information. If there is no main email for the project, leave it blank. Same for the social media links!)
+  #Kicker Text
+
+
+  #Email
+
+
+  #Github
+
+
+  #Twitter
+
+
+  #Facebook
+
