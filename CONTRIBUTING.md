@@ -53,7 +53,7 @@ Once that is done, you wait until the project manager reviews your request and d
 
 # Keeping Your Fork Updated
 
-While this step isn't completely neccessary, it can definitely save your a lot of time and headache if you will be making multiple contributions as opposed to a few small tweaks. So far, the easiest way to keep your locally cloned repository updated with the master is to simply delete the fork and local clone, then refork and clone the master. However, this is not the only way to keep updated!
+While this step isn't completely necessary, it can definitely save your a lot of time and headache if you will be making multiple contributions as opposed to a few small tweaks. So far, the easiest way to keep your locally cloned repository updated with the master is to simply delete the fork and local clone, then refork and clone the master. However, this is not the only way to keep updated!
 
 Using the following commands, we will be adding the **upstream**, or original project, as a remote branch. This will bring their *updates* into our branch locally. Replace the below *upstream-name* and *project-name* values with the actual *user*/*project* name that you wish to track. Please make sure that you are in the **master** branch of your local repository before doing this.
 ```
