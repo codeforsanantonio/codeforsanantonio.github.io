@@ -25,7 +25,7 @@ git checkout -b your-first-name
 
 <br>You are now ready to make your contributions! When you have finished and are ready to commit them, you will simply do...
 ```
-git add -a
+git add -A
 ```
 This will add every file that you have changed, or added, that is different from the master branch.
 
